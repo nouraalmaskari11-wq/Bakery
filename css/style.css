@@ -1,0 +1,720 @@
+/* global style */
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 50px 0;
+}
+
+li {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: #8e7754;
+
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+.clear-float {
+    clear: both;
+}
+
+nav {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    padding: 15px 0;
+
+}
+
+nav figure {
+    width: 150px;
+    height: 50px;
+    float: left;
+
+}
+
+nav figure img {
+    margin-top: 0px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.nav-links {
+    float: right;
+    padding-top: 15px;
+
+}
+
+
+.nav-links a {
+    margin-left: 20px;
+    font-family: "Alegreya";
+    font-size: 18px;
+    color: #8e7754;
+}
+
+
+.box {
+    position: fixed;
+    background: #fff;
+    border-radius: 4px 0 0 4px;
+    width: 42px;
+    height: 86px;
+    right: 0;
+    top: 30%;
+    padding: 15px;
+}
+
+
+.box a {
+    color: #888;
+    display: block;
+    font-size: 16px;
+    font-family: "Alegreya Sans";
+    border-radius: 3px;
+}
+
+.box a:hover {
+    color: #159ef3;
+}
+
+
+
+
+
+.home {
+    background-image: url(../images/1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    position: relative;
+
+
+}
+
+.home header {
+    width: 45%;
+    margin: 300px auto;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+
+
+}
+
+.home h1 {
+    font-family: "Alegreya";
+}
+
+.home p {
+    font-family: "Alegreya Sans";
+}
+
+
+
+button {
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "Alegreya Sans";
+    padding: 15px 28px;
+    border-radius: 3px;
+    margin: 0 5px;
+
+}
+
+button:hover {
+    background-color: #fff;
+    border-color: #fff;
+    color: #222;
+}
+
+.left {
+    background-color: #8e7754;
+    border: 2px solid transparent;
+
+}
+
+
+.right {
+    background-color: transparent;
+    border: 2px solid white;
+    color: #fff;
+
+}
+
+
+
+
+.home .layer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+    
+
+
+
+
+/* start Who we are? */
+
+.who figure,
+.who-details {
+    width: 48%;
+}
+
+.who figure {
+    height: 100%;
+    float: left;
+}
+
+figure img {
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.who-details {
+    margin-top: 150px;
+    float: right;
+
+
+}
+
+
+
+.who-details h3 {
+    font-family: "Alegreya";
+    font-size: 32px;
+    color: #303030;
+
+
+
+}
+
+.who-details p {
+    margin: 30px 0px;
+    color: #686868;
+    font-family: "Alegreya Sans";
+    font-size: 17px;
+    line-height: 1.86em;
+
+}
+
+.who-details ul li {
+    font-family: "Alegreya Sans";
+    font-size: 17px;
+    font-weight: 400;
+    color: #686868;
+    border-radius: 50%;
+    border-color: #777;
+    background-color: #fff;
+
+}
+
+
+.who-details ul li i {
+    color: #8e7754;
+    width: 40px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid black;
+    padding: 10px;
+
+}
+
+
+.our {
+    background: #f8f8f8;
+
+
+}
+
+.our-details h2 {
+    font-size: 32px;
+    font-family: "Alegreya";
+    color: #303030;
+    margin-bottom: 25px;
+
+}
+
+.our-details p {
+    font-family: "Alegreya Sans";
+    font-size: 17px;
+    color: #303030;
+    font-weight: 400;
+    color: #686868;
+    line-height: 1.86em;
+
+
+}
+
+.our-details {
+    margin-top: 150px;
+    width: 47%;
+    float: left;
+
+}
+
+.our figure {
+
+    width: 47%;
+    height: 100%;
+    float: right;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* start ourbaking */
+
+
+.ourbaking-details {
+    margin-top: 20px;
+    text-align: center;
+    overflow: hidden;
+    display: block;
+}
+
+.ourbaking-details h3 {
+    font-family: "Alegreya";
+    font-size: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    color: #303030;
+    line-height: 1.38em;
+    font-weight: 400;
+}
+
+.ourbaking-details p {
+    font-size: 17px;
+    color: #888;
+    max-width: 720px;
+    margin: 17px auto 0;
+    line-height: 1.86em 31.62px;
+    font-family: "Alegreya Sans";
+
+
+}
+
+
+.one {
+    text-align: center;
+
+}
+
+.one h4 {
+    font-family: "Alegreya";
+    font-size: 22px;
+    color: #303030;
+    line-height: 1.38em;
+    font-weight: 400;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+}
+
+.one p {
+    font-family: "Alegreya Sans";
+    font-size: 17px;
+    font-weight: 400;
+    color: #686868;
+    line-height: 1.86em;
+
+}
+
+.one1 {
+    display: inline-block;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+
+.b1 {
+    padding: 0px 20px 0px 15px;
+}
+
+.b2 {
+    padding: 0px 20px;
+}
+
+.b3 {
+    padding: 0px 15px 0px 20px;
+}
+
+
+
+.one figure img {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+/* end ourbaking */
+
+
+/* start contact section */
+.contact {
+    background: #f8f8f8;
+
+}
+
+
+
+.con-details {
+
+    float: left;
+    width: 45%;
+    margin-top: 10%;
+
+
+}
+
+.contact iframe {
+    margin-top: 10%;
+    float: right;
+    width: 50%;
+
+}
+
+.con-details h2 {
+    font-family: "Alegreya";
+    font-size: 32px;
+    color: #303030;
+    line-height: 1.38em;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.con-details p {
+    line-height: 1.86em;
+    font-weight: 400;
+    color: #686868;
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+
+}
+
+
+.con-details li {
+    font-family: "Alegreya Sans";
+    font-size: 17px;
+    font-weight: 400;
+    color: #686868;
+
+}
+
+
+.con-details i {
+    background-color: #8e7754;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+
+
+
+
+
+/* end contact section */
+
+
+/* start footer */
+
+footer {
+    background-color: #403d38;
+    color: #797979;
+
+    font-size: 13px;
+
+
+
+
+}
+
+
+
+
+h4 {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 25px;
+    font-family: "Alegreya";
+    line-height: 1.86em;
+    font-weight: 400;
+}
+
+.main1 ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 12px;
+    color: #969696;
+    font-size: 16px;
+    line-height: 1.86em;
+    margin-bottom: 12px;
+
+
+}
+
+.main1 ul :last-child {
+    border-bottom: none;
+
+}
+
+
+.main1 p {
+    line-height: 1.86em;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+
+
+
+.about {
+    width: 24%;
+    padding: 30px;
+    float: left;
+
+}
+
+
+
+
+
+.botttom {
+    background-color: #353330;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    text-align: center;
+    font-size: 14px;
+    color: #797979;
+    font-family: "Alegreya Sans";
+    line-height: 1.86em;
+    font-weight: 400;
+
+}
+
+
+
+.botttom figure {
+    width: 20%;
+    margin-left: 40%;
+    margin-top: -75px;
+
+
+}
+
+
+figure img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.botttom p {
+    font-family: "Alegreya Sans";
+    margin-bottom: 0;
+    margin-top: 5px;
+    color: #777;
+    font-size: 15px;
+
+
+}
+
+.social {
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 8px;
+}
+
+.social a {
+    background-color: #484540;
+    color: #8c8a86;
+    margin-bottom: 0;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.arow {
+
+    margin-top: 15px;
+    padding-top: 6px;
+    border-radius: 50%;
+    background: rgba(105, 105, 105, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    height: 40px;
+    width: 40px;
+    color: #8c8a86;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
+
+
+}
+
+.arow:hover {
+    border-color: white;
+    background-color: #1b1b1b;
+
+}
+
+
+.arow a {
+    color: #fff;
+    font-size: 15px;
+
+}
+
+
+.social a:nth-child(1):hover {
+    background-color: #3866c9;
+}
+
+
+.social a:nth-child(2):hover {
+    background-color: #e23f29;
+}
+
+
+.social a:nth-child(3):hover {
+    background-color: #0793df;
+}
+
+
+.social a:nth-child(4):hover {
+    background-color: #159ef3;
+}
+
+
+/* end footer */
+
+
+
+
+@media screen and (min-width:600px) and (max-width:1000px) {
+
+
+
+
+
+    .home {
+        background: rgba(255, 255, 0, 0.514);
+        width: 100%;
+
+
+    }
+
+    .who {
+        background: rgba(255, 255, 0, 0.514);
+    }
+
+    .who figure {
+        width: 100%;
+    }
+
+    .who-details {
+        width: 100%;
+    }
+
+
+
+
+
+    .our {
+        background: rgba(255, 255, 0, 0.514);
+    }
+
+    .our-details {
+        width: 100%;
+    }
+
+    .our figure {
+        width: 100%;
+    }
+
+
+
+
+
+    .ourbaking {
+        background: rgba(255, 255, 0, 0.514);
+    }
+
+    .ourbaking-details {
+        width: 100%;
+    }
+
+    .one1 {
+        width: 100%;
+
+    }
+
+
+
+
+    .contact {
+        background: rgba(255, 255, 0, 0.514);
+    }
+
+    .con-details {
+        width: 100%;
+        float: none;
+    }
+
+    .contact iframe {
+        width: 100%;
+        float: none;
+    }
+
+
+
+}
